@@ -17,7 +17,7 @@ function getWeather() {
         .then(data => {
             names.innerHTML ='Ville :' + data.name;
             country.innerHTML ='Pays :' + data.sys.country;
-            weather.innerHTML ='Condition :' + data.weather.main;
+            weather.innerHTML ='Condition :' + data.weather.main; //marche pas = undefined
             temp.innerHTML ='Température :' + data.main.temp + '°C';
             humidity.innerHTML ='Humidité' + data.main.humidity + '%';
         })
@@ -32,6 +32,7 @@ button.addEventListener('click', getWeather);
 // étape 1 = plus d'information = finish
 // étape 2 = pouvoir avoir URL dynamique
 // étape 3 = entrer long et lat et clicker pour que HTML change
+// étape 4 = ajouter images + animation qui vont avec la météo de maintenant
 
 //${lat}
 //${long}
