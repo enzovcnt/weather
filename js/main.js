@@ -17,9 +17,9 @@ function getWeather() {
         .then(data => {
             names.innerHTML ='Ville :' + data.name;
             country.innerHTML ='Pays :' + data.sys.country;
-            weather.innerHTML ='Condition :' + data.weather.main; //marche pas = undefined
+            weather.innerHTML ='Condition :' + data.weather[0].main;
             temp.innerHTML ='Température :' + data.main.temp + '°C';
-            humidity.innerHTML ='Humidité' + data.main.humidity + '%';
+            humidity.innerHTML ='Humidité :' + data.main.humidity + '%';
         })
         .catch(err => console.log(err));
 
