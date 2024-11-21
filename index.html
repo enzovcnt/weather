@@ -10,17 +10,24 @@
 <body>
 
 <div class="container-sm">
-    <div class="row">
-        <div class="col">
-            <span class="name" style="height: 3vh"></span>
+    <div class="d-flex flex-column justify-content-center align-items-center" style="height: 100vh">
+        <div class="d-flex">
+            <h1 class="name"></h1>
         </div>
-        <div class="col">
-            <span class="weather" style="height: 3vh"></span>
+        <div class="d-flex">
+            <h1 class="weather"></h1>
         </div>
+        <div class="d-flex">
+            <h1 class="température"></h1>
+        </div>
+        <div class="d-flex">
+            <h1 class="humid"></h1>
+        </div>
+        <input class="form-control form-control-lg latitude" type="number" style="width: 20VW">
+        <input class="form-control form-control-lg longitude" type="number" style="width: 20VW">
+        <button type="button" class="btn btn-primary bouton">Montre moi le temps</button>
     </div>
-    <input class="form-control form-control-lg latitude" type="number">
-    <input class="form-control form-control-lg longitude" type="number">
-    <button type="button" class="btn btn-primary bouton">Montre moi le temps</button>
+
 
 </div>
 
